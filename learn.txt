@@ -1,12 +1,35 @@
 初始化一个Git仓库，使用git init命令。
+
 添加文件到Git仓库，分两步：
+
 使用命令git add <file>，注意，可反复多次使用，添加多个文件；
+
 使用命令git commit -m <message>，完成。
+
 git status命令可以让我们时刻掌握仓库当前的状态
+
 如果git status告诉你有文件被修改过，用git diff可以查看修改内容。
+
 HEAD指向的版本就是当前版本，因此，Git允许我们在版本的历史之间穿梭，使用命令git reset --hard <commit_id>
+
 git log可以查看提交历史
+
 git reflog查看命令历史
+
 git checkout -- file可以丢弃工作区的修改
+
 git reset HEAD <file>可以把暂存区的修改撤销掉（unstage），重新放回工作区
+查看分支：git branch
+
+创建分支：git branch <name>
+
+切换分支：git checkout <name>
+
+创建+切换分支：git checkout -b <name>
+
+合并某分支到当前分支：git merge <name>
+
+删除分支：git branch -d <name>
+
+
 #git add是将文件add到暂存区 commit是提交到版本库 
