@@ -21,6 +21,11 @@ git checkout -- file可以丢弃工作区的修改
 git reset HEAD <file>可以把暂存区的修改撤销掉（unstage），重新放回工作区
 查看分支：git branch
 
+git status -s 简单模式查看状态，第一列本地库和缓存区的差异，第二列缓存区和工作目录的差异
+
+git rm –cached “文件路径”，不删除物理文件，仅将该文件从缓存中删除；
+git rm –f “文件路径”，不仅将该文件从缓存中删除，还会将物理文件删除（不会回收到垃圾桶）。
+
 创建分支：git branch <name>
 
 切换分支：git checkout <name>
